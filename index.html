@@ -41,9 +41,15 @@
   <script>
     let count = 0;
     function increment() {
-      count++;
-      document.getElementById("counter").innerText = count;
-    }
+  count++;
+  document.getElementById("counter").innerText = count;
+
+  // Mostrar mensaje especial cuando llegue a 10
+  if (count === 10) {
+    alert("¡Has llegado a 10!");
+  }
+}
+
     function reset() {
       count = 0;
       document.getElementById("counter").innerText = count;
