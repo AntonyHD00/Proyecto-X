@@ -36,11 +36,20 @@
   <h1>Proyecto Demo - Contador</h1>
   <p id="counter">0</p>
   <button onclick="increment()">Incrementar</button>
+  <button onclick="decrement()">Decrementar</button>
   <button onclick="reset()">Reiniciar</button>
 
   <script>
     let count = 0;
     function increment() {
+      count++;
+      document.getElementById("counter").innerText = count;
+    }
+    function decrement() {
+      count--;
+      document.getElementById("counter").innerText = count;
+    }
+=======
   count++;
   document.getElementById("counter").innerText = count;
 
